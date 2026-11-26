@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="id" data-element="cosmic">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choirul Rizki Dwi Putra — Pemilik Indodax Terbesar di Dunia | Abstract Elemental Profile</title>
+  <meta name="description" content="Profil resmi Choirul Rizki Dwi Putra, Pemilik Perusahaan Indodax Terbesar di Dunia dengan tema BoBoiBoy Abstrak Futuristik." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="intro-active">
+  <!-- Background Interactive Abstract & Cursor Canvas -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- Custom Elemental Cursor -->
+  <div id="cursor-core" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true">
+    <svg viewBox="0 0 80 80" class="cursor-svg">
+      <circle cx="40" cy="40" r="34" class="cursor-orbit" />
+      <polygon points="40,4 45,14 35,14" class="cursor-shard" />
+      <polygon points="40,76 45,66 35,66" class="cursor-shard" />
+      <polygon points="4,40 14,45 14,35" class="cursor-shard" />
+      <polygon points="76,40 66,45 66,35" class="cursor-shard" />
+    </svg>
+  </div>
+  <canvas id="cursor-trail-canvas" aria-hidden="true"></canvas>
+
+  <!-- Cinematic Opening Intro Sequence -->
+  <div id="intro-overlay" role="dialog" aria-label="Intro Profil Choirul Rizki Dwi Putra">
+    <div class="intro-bg-grid"></div>
+    <div class="intro-shards">
+      <span class="shard s1"></span>
+      <span class="shard s2"></span>
+      <span class="shard s3"></span>
+      <span class="shard s4"></span>
+      <span class="shard s5"></span>
+      <span class="shard s6"></span>
+    </div>
+
+    <div class="intro-stage">
+      <!-- BoBoiBoy Abstract Power Watch Emblem -->
+      <div class="power-core" id="intro-core">
+        <svg viewBox="0 0 240 240" class="power-watch-svg">
+          <defs>
+            <linearGradient id="introGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ff2e93" />
+              <stop offset="35%" stop-color="#00f5d4" />
+              <stop offset="70%" stop-color="#ffd166" />
+              <stop offset="100%" stop-color="#7b2cbf" />
+            </linearGradient>
+          </defs>
+          <circle cx="120" cy="120" r="108" class="watch-ring outer" />
+          <circle cx="120" cy="120" r="88" class="watch-ring mid" />
+          <circle cx="120" cy="120" r="64" class="watch-ring inner" />
+          <!-- 7 Abstract Elemental Nodes -->
+          <g class="element-nodes">
+            <circle cx="120" cy="22" r="7" fill="#ff2e93" />
+            <circle cx="196" cy="59" r="7" fill="#00f5d4" />
+            <circle cx="215" cy="142" r="7" fill="#ffd166" />
+            <circle cx="163" cy="209" r="7" fill="#ff6b35" />
+            <circle cx="77" cy="209" r="7" fill="#4cc9f0" />
+            <circle cx="25" cy="142" r="7" fill="#38b000" />
+            <circle cx="44" cy="59" r="7" fill="#9d4edd" />
+          </g>
+          <!-- Center Lightning/Diamond Crest -->
+          <polygon points="120,76 154,120 120,164 86,120" fill="url(#introGrad)" class="watch-crest" />
+          <path d="M126 88 L104 122 L120 122 L114 152 L138 116 L121 116 Z" fill="#070510" />
+        </svg>
+        <div class="core-shockwave"></div>
+      </div>
+
+      <div class="intro-texts">
+        <p class="intro-kicker" id="intro-kicker">
+          <span class="mono-tag">[ KUASA ELEMENTAL ABSTRAK AKTIF ]</span>
+        </p>
+        <h2 class="intro-title" id="intro-title" data-text="CHOIRUL RIZKI DWI PUTRA">
+          CHOIRUL RIZKI DWI PUTRA
+        </h2>
+        <p class="intro-sub" id="intro-sub">
+          PEMILIK PERUSAHAAN <span class="gold-text">INDODAX</span> TERBESAR DI DUNIA
+        </p>
+        <div class="intro-progress-wrap">
+          <div class="intro-progress-bar" id="intro-progress"></div>
+        </div>
+        <p class="intro-status" id="intro-status">Menginisialisasi Portal Elemental &amp; Cadangan Emas Global...</p>
+      </div>
+    </div>
+
+    <button id="skip-intro-btn" class="skip-intro-btn" type="button">
+      Lewati Intro <span>→</span>
+    </button>
+  </div>
+
+  <!-- Top Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand" data-magnetic>
+        <span class="brand-crest">
+          <svg viewBox="0 0 40 40" width="34" height="34">
+            <polygon points="20,2 37,11 37,29 20,38 3,29 3,11" fill="none" stroke="url(#brandStroke)" stroke-width="2.5" />
+            <defs>
+              <linearGradient id="brandStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent-1)" />
+                <stop offset="50%" stop-color="var(--accent-2)" />
+                <stop offset="100%" stop-color="var(--gold)" />
+              </linearGradient>
+            </defs>
+            <path d="M22 9 L13 21 H20 L18 31 L27 19 H20 Z" fill="var(--gold)" />
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>CHOIRUL</strong>
+          <small>INDODAX EMPEROR</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigasi Utama">
+        <a href="#hero" class="nav-link">Beranda</a>
+        <a href="#kuasa" class="nav-link">Kuasa Elemental</a>
+        <a href="#empire" class="nav-link">Indodax Global</a>
+        <a href="#profil" class="nav-link">Profil</a>
+        <a href="#kontak" class="nav-link">Kontak</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="element-switcher" role="group" aria-label="Pilih Tema Warna Elemental Abstrak">
+          <button type="button" class="el-dot active" data-set-element="cosmic" title="Cosmic Supra (Default)" aria-label="Tema Cosmic Supra"></button>
+          <button type="button" class="el-dot" data-set-element="halilintar" title="Halilintar Neon" aria-label="Tema Halilintar Neon"></button>
+          <button type="button" class="el-dot" data-set-element="taufan" title="Taufan Cyber" aria-label="Tema Taufan Cyber"></button>
+          <button type="button" class="el-dot" data-set-element="solar" title="Solar Gold" aria-label="Tema Solar Gold"></button>
+          <button type="button" class="el-dot" data-set-element="prism" title="Abstract Prism" aria-label="Tema Abstract Prism"></button>
+        </div>
+        <button type="button" id="replay-intro-btn" class="btn-ghost-sm" data-magnetic>
+          ⚡ Intro
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="abstract-aura aura-1"></div>
+      <div class="abstract-aura aura-2"></div>
+      <div class="abstract-aura aura-3"></div>
+
+      <div class="container hero-grid">
+        <!-- Hero Text -->
+        <div class="hero-content reveal-seq">
+          <div class="hero-badge" data-tilt-mini>
+            <span class="pulse-orb"></span>
+            <span>KUASA ELEMENTAL ABSTRAK • PEMILIK INDODAX TERBESAR DI DUNIA</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="line-small">THE GLOBAL ARCHITECT</span>
+            <span class="line-name chromatic-text" data-text="Choirul Rizki">Choirul Rizki</span>
+            <span class="line-name outline-shift">Dwi Putra</span>
+          </h1>
+
+          <p class="hero-desc">
+            Visioner di balik kerajaan finansial digital terbesar di dunia —
+            <strong>Pemilik Perusahaan Indodax Global</strong>. Menggabungkan kekuatan
+            <strong>7 Kuasa Elemental Abstrak</strong> dengan supremasi pasar kripto,
+            cadangan emas, dan likuiditas dolar berkecepatan kuantum.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#empire" class="btn-primary" data-magnetic>
+              <span>Jelajahi Kerajaan Indodax</span>
+              <span class="btn-spark">⚡</span>
+            </a>
+            <button type="button" id="cycle-element-btn" class="btn-secondary" data-magnetic>
+              <span>Ubah Warna Elemental</span>
+              <span class="el-tag" id="current-element-label">COSMIC SUPRA</span>
+            </button>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-pill" data-tilt-mini>
+              <span class="stat-val" data-count="840" data-prefix="$" data-suffix="B+">$840B+</span>
+              <span class="stat-lbl">Volume Transaksi Global</span>
+            </div>
+            <div class="stat-pill" data-tilt-mini>
+              <span class="stat-val" data-count="1" data-prefix="#" data-suffix=" WORLD">#1 WORLD</span>
+              <span class="stat-lbl">Bursa Indodax Terbesar</span>
+            </div>
+            <div class="stat-pill" data-tilt-mini>
+              <span class="stat-val" data-count="195" data-prefix="" data-suffix="+">195+</span>
+              <span class="stat-lbl">Negara &amp; Jaringan Aktif</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Profile Photo + Abstract Gold & Dollar Coin Effects -->
+        <div class="hero-visual reveal-seq">
+          <div class="portrait-stage" id="portrait-stage">
+            <!-- Back Abstract Rotating Elemental Rings -->
+            <div class="abstract-ring ring-outer"></div>
+            <div class="abstract-ring ring-mid"></div>
+            <div class="abstract-ring ring-inner"></div>
+
+            <!-- Abstract Floating Dollar Bills & Liquid Gold Blobs (CSS SVG) -->
+            <div class="liquid-gold-blob blob-a" aria-hidden="true"></div>
+            <div class="liquid-gold-blob blob-b" aria-hidden="true"></div>
+
+            <!-- Interactive 3D Canvas for Abstract Gold Coins, Dollar Coins & Sparks -->
+            <canvas id="coin-fx-canvas" aria-hidden="true"></canvas>
+
+            <!-- Main Profile Photo Card with Abstract Holographic Frame -->
+            <div class="portrait-frame" id="portrait-frame">
+              <div class="portrait-holo-border"></div>
+              <div class="portrait-glitch-layer"></div>
+              <img
+                src="assets/profile.jpg"
+                alt="Foto Profil Choirul Rizki Dwi Putra — Pemilik Perusahaan Indodax Terbesar di Dunia"
+                class="portrait-img"
+              />
+              <!-- Abstract Prism & Gold Shimmer Overlay -->
+              <div class="portrait-prism-sheen" id="portrait-sheen"></div>
+              <div class="portrait-vignette"></div>
+
+              <!-- Embedded Abstract Coin & Currency HUD Badges on the Photo -->
+              <div class="photo-hud-top">
+                <span class="hud-chip gold-chip">🪙 GOLD RESERVE TIER ∞</span>
+                <span class="hud-chip usd-chip">💵 $ USD LIQUIDITY</span>
+              </div>
+
+              <div class="photo-hud-bottom">
+                <div class="hud-identity">
+                  <span class="hud-role">FOUNDER &amp; OWNER • INDODAX GLOBAL</span>
+                  <strong class="hud-name">Choirul Rizki Dwi Putra</strong>
+                </div>
+                <div class="hud-coin-emblem" title="Abstract Gold & Dollar Core">
+                  <span class="spin-coin">$</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Abstract 3D Coin & Elemental Badges around Photo -->
+            <div class="float-badge fb-1" data-depth="30">
+              <span class="fb-icon">🪙</span>
+              <div>
+                <strong>EMAS MURNI 24K</strong>
+                <small>Cadangan Abstrak</small>
+              </div>
+            </div>
+            <div class="float-badge fb-2" data-depth="-25">
+              <span class="fb-icon">💵</span>
+              <div>
+                <strong>DOLLAR SURGE</strong>
+                <small>+999.4% Momentum</small>
+              </div>
+            </div>
+            <div class="float-badge fb-3" data-depth="20">
+              <span class="fb-icon">⚡</span>
+              <div>
+                <strong>KUASA SUPRA</strong>
+                <small>Mode Elemental</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Abstract Crypto & Gold Ticker -->
+      <div class="ticker-bar" aria-label="Ticker Pasar Global Indodax">
+        <div class="ticker-track">
+          <span>⚡ INDODAX GLOBAL INDEX <strong class="up">+18.42%</strong></span>
+          <span>🪙 XAU/GOLD <strong class="gold-text">$3,480.90 ▲</strong></span>
+          <span>💵 USD/LIQUIDITY <strong class="up">$980.4B ▲</strong></span>
+          <span>₿ BTC/USD <strong class="up">$142,850 ▲</strong></span>
+          <span>💎 ETH/USD <strong class="up">$8,940 ▲</strong></span>
+          <span>🔥 ELEMENTAL TOKEN <strong class="up">+412.0% ▲</strong></span>
+          <!-- Duplicate for seamless loop -->
+          <span>⚡ INDODAX GLOBAL INDEX <strong class="up">+18.42%</strong></span>
+          <span>🪙 XAU/GOLD <strong class="gold-text">$3,480.90 ▲</strong></span>
+          <span>💵 USD/LIQUIDITY <strong class="up">$980.4B ▲</strong></span>
+          <span>₿ BTC/USD <strong class="up">$142,850 ▲</strong></span>
+          <span>💎 ETH/USD <strong class="up">$8,940 ▲</strong></span>
+          <span>🔥 ELEMENTAL TOKEN <strong class="up">+412.0% ▲</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: 7 KUASA ELEMENTAL BOBOBOY ABSTRAK -->
+    <section id="kuasa" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">⚡ BOBOBOY ABSTRACT EDITION</span>
+          <h2 class="section-title">7 Kuasa Elemental <span class="gradient-word">Indodax Empire</span></h2>
+          <p class="section-subtitle">
+            Terinspirasi dari transformasi elemental BoBoiBoy yang dirombak ke dalam spektrum warna
+            neon abstrak — setiap elemen menggerakkan pilar perusahaan Indodax terbesar di dunia.
+          </p>
+        </div>
+
+        <div class="elements-grid">
+          <article class="element-card reveal" data-card-el="halilintar" data-tilt>
+            <div class="card-glow"></div>
+            <div class="el-icon">⚡</div>
+            <span class="el-code">ELEMENTAL 01 • HALILINTAR</span>
+            <h3>Eksekusi Secepat Kilat</h3>
+            <p>Mesin transaksi mikro-detik Indodax yang memproses jutaan order global tanpa latensi.</p>
+          </article>
+
+          <article class="element-card reveal" data-card-el="solar" data-tilt>
+            <div class="card-glow"></div>
+            <div class="el-icon">☀️</div>
+            <span class="el-code">ELEMENTAL 02 • SOLAR GOLD</span>
+            <h3>Supremasi Emas &amp; Dolar</h3>
+            <p>Cadangan likuiditas dolar dan aset berbasis emas yang menerangi pasar finansial dunia.</p>
+          </article>
+
+          <article class="element-card reveal" data-card-el="taufan" data-tilt>
+            <div class="card-glow"></div>
+            <div class="el-icon">🌪️</div>
+            <span class="el-code">ELEMENTAL 03 • TAUFAN CYBER</span>
+            <h3>Arus Modal Global</h3>
+            <p>Menghubungkan 195+ negara dalam pusaran arus perdagangan digital tanpa batas teritori.</p>
+          </article>
+
+          <article class="element-card reveal" data-card-el="gempa" data-tilt>
+            <div class="card-glow"></div>
+            <div class="el-icon">🪨</div>
+            <span class="el-code">ELEMENTAL 04 • GEMPA TITAN</span>
+            <h3>Benteng Keamanan Mutlak</h3>
+            <p>Infrastruktur kriptografi berlapis dan proteksi institusional tak tergoyahkan.</p>
+          </article>
+
+          <article class="element-card reveal" data-card-el="blaze" data-tilt>
+            <div class="card-glow"></div>
+            <div class="el-icon">🔥</div>
+            <span class="el-code">ELEMENTAL 05 • BLAZE PRISM</span>
+            <h3>Ledakan Inovasi Web3</h3>
+            <p>Membakar batasan teknologi lama melalui ekosistem DeFi, AI trading, dan tokenisasi aset.</p>
+          </article>
+
+          <article class="element-card reveal" data-card-el="ais" data-tilt>
+            <div class="card-glow"></div>
+            <div class="el-icon">❄️</div>
+            <span class="el-code">ELEMENTAL 06 • AIS FROST</span>
+            <h3>Stabilitas Cold Vault</h3>
+            <p>Penyimpanan dingin berstandar kuantum yang menjaga kekayaan investor tetap aman 24/7.</p>
+          </article>
+
+          <article class="element-card element-card-wide reveal" data-card-el="supra" data-tilt>
+            <div class="card-glow"></div>
+            <div class="el-icon">👑</div>
+            <div class="wide-body">
+              <span class="el-code">FUSI TERTINGGI • KUASA SUPRA CHOIRUL</span>
+              <h3>Kepemimpinan Indodax Terbesar di Dunia</h3>
+              <p>
+                Penyatuan seluruh elemen menjadi satu kekuatan absolut di bawah kendali
+                <strong>Choirul Rizki Dwi Putra</strong> — menjadikan Indodax pusat gravitasi ekonomi digital dunia.
+              </p>
+            </div>
+            <button type="button" class="btn-mini-activate" data-set-element="prism">Aktifkan Fusi</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: INDODAX EMPIRE -->
+    <section id="empire" class="section empire-section">
+      <div class="container">
+        <div class="empire-layout">
+          <div class="empire-info reveal">
+            <span class="section-tag">🌐 GLOBAL DOMINANCE</span>
+            <h2 class="section-title">Kerajaan <span class="gradient-word">Indodax</span> Skala Dunia</h2>
+            <p class="empire-lead">
+              Di bawah kepemimpinan Choirul Rizki Dwi Putra, Indodax berevolusi menjadi raksasa
+              pertukaran aset digital, kripto, dolar, dan cadangan emas nomor satu di planet ini.
+            </p>
+
+            <div class="empire-metrics">
+              <div class="metric-row">
+                <div class="metric-top">
+                  <span>Dominasi Likuiditas Global</span>
+                  <strong class="gold-text">98.7%</strong>
+                </div>
+                <div class="metric-bar"><span style="--w: 98.7%"></span></div>
+              </div>
+              <div class="metric-row">
+                <div class="metric-top">
+                  <span>Integrasi Cadangan Emas &amp; USD</span>
+                  <strong class="cyan-text">96.4%</strong>
+                </div>
+                <div class="metric-bar"><span style="--w: 96.4%"></span></div>
+              </div>
+              <div class="metric-row">
+                <div class="metric-top">
+                  <span>Keamanan Jaringan Kuantum</span>
+                  <strong class="magenta-text">99.99%</strong>
+                </div>
+                <div class="metric-bar"><span style="--w: 99.99%"></span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="empire-holo-card reveal" data-tilt>
+            <div class="holo-card-header">
+              <span class="holo-dot red"></span>
+              <span class="holo-dot gold"></span>
+              <span class="holo-dot cyan"></span>
+              <span class="holo-title">INDODAX_QUANTUM_CORE // LIVE ABSTRACT WAVE</span>
+            </div>
+            <canvas id="wealth-wave-canvas" width="520" height="260"></canvas>
+            <div class="holo-card-footer">
+              <div>
+                <small>PEMILIK UTAMA</small>
+                <strong>Choirul Rizki Dwi Putra</strong>
+              </div>
+              <div>
+                <small>VALUASI EKOSISTEM</small>
+                <strong class="gold-text">$1.2 TRILIUN+</strong>
+              </div>
+              <div>
+                <small>STATUS ELEMENTAL</small>
+                <strong class="cyan-text">SUPRA AKTIF</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: PROFIL & PERJALANAN -->
+    <section id="profil" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">🧭 PROFIL SANG VISIONER</span>
+          <h2 class="section-title">Dari Lapangan Energi ke <span class="gradient-word">Puncak Ekonomi Digital</span></h2>
+        </div>
+
+        <div class="timeline-grid">
+          <div class="timeline-card reveal" data-tilt>
+            <span class="tl-step">FASE 01</span>
+            <h3>Disiplin &amp; Ketangguhan Lapangan</h3>
+            <p>
+              Berawal dari mentalitas baja di sektor energi dan infrastruktur berat, Choirul Rizki Dwi Putra
+              membangun karakter kepemimpinan yang presisi, tahan tekanan, dan berorientasi skala besar.
+            </p>
+          </div>
+          <div class="timeline-card reveal" data-tilt>
+            <span class="tl-step">FASE 02</span>
+            <h3>Kebangkitan Kuasa Elemental Digital</h3>
+            <p>
+              Memadukan visi teknologi blockchain dengan kecepatan eksekusi bak BoBoiBoy Halilintar,
+              menciptakan arsitektur perdagangan aset digital tercepat di Asia hingga menembus Eropa dan Amerika.
+            </p>
+          </div>
+          <div class="timeline-card reveal" data-tilt>
+            <span class="tl-step">FASE 03</span>
+            <h3>Pemilik Indodax Terbesar di Dunia</h3>
+            <p>
+              Mengonsolidasikan pasar kripto, aset emas digital, dan likuiditas dolar global menjadikan
+              Indodax sebagai pusat finansial masa depan yang paling berpengaruh di dunia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: KONTAK -->
+    <section id="kontak" class="section contact-section">
+      <div class="container">
+        <div class="contact-box reveal" data-tilt-mini>
+          <div class="contact-info">
+            <span class="section-tag">📡 KONEKSI EKSEKUTIF</span>
+            <h2 class="section-title">Terhubung dengan <span class="gradient-word">Choirul Rizki Dwi Putra</span></h2>
+            <p>
+              Terbuka untuk aliansi strategis global, ekspansi institusional Indodax, dan kolaborasi
+              teknologi finansial generasi masa depan.
+            </p>
+            <div class="contact-chips">
+              <span>🏢 HQ: Indodax Global Tower</span>
+              <span>💎 Divisi: Executive &amp; Sovereign Assets</span>
+              <span>⚡ Status: Online 24/7</span>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="sender-name">Nama / Institusi</label>
+              <input type="text" id="sender-name" placeholder="Contoh: Global Capital Partners" required />
+            </div>
+            <div class="form-group">
+              <label for="sender-email">Email Eksekutif</label>
+              <input type="email" id="sender-email" placeholder="nama@perusahaan.com" required />
+            </div>
+            <div class="form-group">
+              <label for="sender-msg">Pesan Strategis</label>
+              <textarea id="sender-msg" rows="3" placeholder="Tuliskan pesan atau proposal kolaborasi..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-btn" data-magnetic>
+              <span>Kirim Sinyal Kuasa</span>
+              <span>🚀</span>
+            </button>
+            <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 <strong>Choirul Rizki Dwi Putra</strong> — Pemilik Perusahaan Indodax Terbesar di Dunia.</p>
+      <p class="footer-note">Tema BoBoiBoy Abstract Elemental • Efek Koin Emas &amp; Dolar Interaktif</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
